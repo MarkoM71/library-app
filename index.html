@@ -7,6 +7,20 @@
     <title>Library App</title>
 </head>
 <body>
-    
+    <h1>My Library</h1>
+    <button class="new-book-btn">New Book</button>
+    <form class="new-book-form" style="display: none">
+        <label for="title">Title:</label>
+        <input type="text" id="title" required>
+        <label for="author">Author:</label>
+        <input type="text" id="author" required>
+        <label for="pages">Pages:</label>
+        <input type="text" id="pages" required>
+        <label for="read">Read:</label>
+        <input type="checkbox" id="read" required>
+        <input type="submit" value="Add Book">
+    </form>
+    <div class="library"></div>
+    <script src="jScript.js"></script>
 </body>
 </html>
