@@ -21,6 +21,8 @@ function addBookToLibrary() {
     } else {
         let newBook = new Book(title, author, pages, read);
         myLibrary.push(newBook);
+        restoreData();
+        displayBooks();
     }
 }
 
@@ -60,6 +62,7 @@ function toggle(index) {
 //REMOVE BOOK FROM LIBRARY
 function removeBook(index) {
     myLibrary.splice(index, 1);
+    restoreData();
     displayBooks();
 }
 
@@ -77,4 +80,23 @@ document.querySelector(".new-book-form").addEventListener("submit", function (ev
     let bookForm = document.querySelector(".new-book-form");
     bookForm.reset();
 })
+
+//STORE LIBRARY IN LOCAL STORAGE
+function storeData() {
+    localStorage.setItem(`myLibrary`, JSON.stringify(myLibrary));
+}
+
+//RESTORE BOOKS FROM LOCAL STORAGE WHEN PAGE REFRESHED
+function restoreData() {
+    if (!localStorage.myLibrary) {
+        displayBooks();
+    } else {
+        let objects = localStorage.getItem('myLibrary')
+        objects = JSON.parse(objects);
+        myLibrary = objects;
+        displayBooks();
+    }
+}
+
+restoreData();
 
