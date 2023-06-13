@@ -70,5 +70,11 @@ newBookButton.addEventListener("click", function () {
     newBookForm.style.display = "block";
 })
 
-
+//SUBMIT FORM BUTTON
+document.querySelector(".new-book-form").addEventListener("submit", function (event) {
+    event.preventDefault();
+    addBookToLibrary();
+    let bookForm = document.querySelector(".new-book-form");
+    bookForm.reset();
+})
 
