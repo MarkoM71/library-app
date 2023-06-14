@@ -54,6 +54,7 @@ Book.prototype.toggleRead = function() {
   this.read = !this.read;
 }
 
+// eslint-disable-next-line no-unused-vars
 function toggle(index) {
     myLibrary[index].toggleRead();
     storeData();
@@ -61,6 +62,7 @@ function toggle(index) {
 }
 
 //REMOVE BOOK FROM LIBRARY
+// eslint-disable-next-line no-unused-vars
 function removeBook(index) {
     myLibrary.splice(index, 1);
     storeData();
