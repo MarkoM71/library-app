@@ -21,7 +21,7 @@ function addBookToLibrary() {
     } else {
         let newBook = new Book(title, author, pages, read);
         myLibrary.push(newBook);
-        restoreData();
+        storeData();
         displayBooks();
     }
 }
@@ -62,7 +62,7 @@ function toggle(index) {
 //REMOVE BOOK FROM LIBRARY
 function removeBook(index) {
     myLibrary.splice(index, 1);
-    restoreData();
+    storeData();
     displayBooks();
 }
 
