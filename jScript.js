@@ -14,7 +14,7 @@ function addBookToLibrary() {
     let title = document.getElementById("title").value;
     let author = document.getElementById("author").value;
     let pages = document.getElementById("pages").value;
-    let read = document.getElementById("read").value;
+    let read = document.getElementById("read").checked;
 
     if (myLibrary.some(book => book.title == title)) {
         alert("Can't submit the same book")
@@ -56,6 +56,7 @@ Book.prototype.toggleRead = function() {
 
 function toggle(index) {
     myLibrary[index].toggleRead();
+    storeData();
     displayBooks();
 }
 
