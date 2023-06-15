@@ -42,8 +42,8 @@ function displayBooks() {
                 <h5 class="author">by ${book.author}</h5>
             </div>
             <div class="card-body">
-                <p>${book.pages} pages</p>
-                <p class="read-status">${book.read ? "Read" : "Not Read Yet"}</p>
+                <p class="pages">${book.pages} pages</p>
+                <p class="read-status">${book.read ? "Read" : "Not Read"}</p>
                 <button class="remove-button" onclick="removeBook(${i})">Remove</button>
                 <button class="toggle-read-button" onclick="toggle(${i})">Toggle Read</button>
             </div>`;
