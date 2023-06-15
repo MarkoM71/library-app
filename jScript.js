@@ -9,6 +9,8 @@ function Book(title, author, pages, read) {
     this.read = read;
 }
 
+
+
 //ADDS TO LIBRARY
 function addBookToLibrary() {
     let title = document.getElementById("title").value;
@@ -41,9 +43,9 @@ function displayBooks() {
             </div>
             <div class="card-body">
                 <p>${book.pages} pages</p>
-                <p class="read-status>${book.read ? "Read" : "Not Read Yet"}</p>
+                <p class="read-status">${book.read ? "Read" : "Not Read Yet"}</p>
                 <button class="remove-button" onclick="removeBook(${i})">Remove</button>
-                <button class="toggle-read-button" onclick"toggle(${i})">Toggle Read</button>
+                <button class="toggle-read-button" onclick="toggle(${i})">Toggle Read</button>
             </div>`;
         libraryContainer.appendChild(bookElement);
     }
