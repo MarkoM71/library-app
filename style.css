@@ -1,6 +1,9 @@
 body {
     font-family: sans-serif;
+    background: linear-gradient(rgb(234, 239, 240), rgb(48, 62, 143));
 }
+
+/* rgb(47, 150, 163) */
 
 .heading {
     display: flex;
@@ -8,6 +11,9 @@ body {
     font-size: 35px;
     font-weight: bold;
     margin: 40px;
+    font-family: 'Sansita Swashed', cursive;
+    transform: scale(1.1);
+
 }
 
 .new-book-btn-container {
@@ -19,6 +25,13 @@ body {
 .new-book-button {
     font-size: 20px;
     padding: 5px;
+    cursor: pointer;
+    background-color: rgb(48, 62, 143);
+    color: white;
+}
+
+.new-book-button:hover {
+    background-color: rgb(94, 101, 138);
 }
 
 form {
@@ -27,10 +40,12 @@ form {
     margin: 50px auto;
     text-align: center;
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid black;
     border-radius: 10px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     font-size: 20px;
+
+    /* #ddd; */
 }
 
 label {
@@ -49,6 +64,13 @@ input[type="submit"] {
     margin: 20px auto;
     font-size: 20px;
     padding: 5px;
+    cursor: pointer;
+    background-color: rgb(48, 62, 143);
+    color: white;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(94, 101, 138);
 }
 
 label {
@@ -93,13 +115,24 @@ label {
     font-size: 20px;
     padding: 5px;
     margin: 5px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.remove-button:hover, .toggle-read-button:hover  {
+    color: white;
+    background-color: rgb(48, 62, 143);
 }
 
 .toggle-read-button {
     font-size: 20px;
     padding: 5px;
     margin: 5px;
+    cursor: pointer;
+    background-color: white;
 }
+
+
 
 
 

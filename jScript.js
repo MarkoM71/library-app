@@ -51,6 +51,19 @@ function displayBooks() {
     }
 }
 
+//COLOR OF READ/NOT READ
+// let colorReadStatus = document.querySelector(".read-status");
+
+// if (book.read === true) {
+//     colorReadStatus.textContent = "Read"
+//     colorReadStatus.style.background = '#63da63';
+// } 
+// else (book.read === false){
+//     colorReadStatus.textContent = "Not Read"
+//     colorReadStatus.style.background = '#e04f63';
+// }
+
+
 //TOGGLE READ FUNCTION
 Book.prototype.toggleRead = function() {
   this.read = !this.read;
