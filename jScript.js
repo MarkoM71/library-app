@@ -1,6 +1,5 @@
 let myLibrary = [];
 
-
 //CONSTRUCTOR 
 function Book(title, author, pages, read) {
     this.title = title;
@@ -8,8 +7,6 @@ function Book(title, author, pages, read) {
     this.pages = pages;
     this.read = read;
 }
-
-
 
 //ADDS TO LIBRARY
 function addBookToLibrary() {
@@ -51,25 +48,11 @@ function displayBooks() {
     }
 }
 
-//COLOR OF READ/NOT READ
-// let colorReadStatus = document.querySelector(".read-status");
-
-// if (book.read === true) {
-//     colorReadStatus.textContent = "Read"
-//     colorReadStatus.style.background = '#63da63';
-// } 
-// else (book.read === false){
-//     colorReadStatus.textContent = "Not Read"
-//     colorReadStatus.style.background = '#e04f63';
-// }
-
-
 //TOGGLE READ FUNCTION
 Book.prototype.toggleRead = function() {
   this.read = !this.read;
 }
 
-// eslint-disable-next-line no-unused-vars
 function toggle(index) {
     myLibrary[index].toggleRead();
     storeData();
@@ -77,7 +60,6 @@ function toggle(index) {
 }
 
 //REMOVE BOOK FROM LIBRARY
-// eslint-disable-next-line no-unused-vars
 function removeBook(index) {
     myLibrary.splice(index, 1);
     storeData();
@@ -89,9 +71,6 @@ let newBookButton = document.querySelector(".new-book-button");
 const popUpForm = document.getElementById('pop-up');
 newBookButton.addEventListener("click", function () {
     popUpForm.style.display = "block";
-    //Previous had it done this way
-    // let newBookForm = document.querySelector(".new-book-form");
-    // newBookForm.style.display = "block";
 })
 
 //CLOSE FORM BUTTON
@@ -114,7 +93,6 @@ document.querySelector(".new-book-form").addEventListener("submit", function (ev
     let bookForm = document.querySelector(".new-book-form");
     bookForm.reset();
     popUpForm.style.display = "none";
-    // bookForm.style.display = "none";
 })
 
 //STORE LIBRARY IN LOCAL STORAGE
