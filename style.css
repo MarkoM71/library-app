@@ -1,6 +1,7 @@
 body {
     font-family: sans-serif;
-    background: linear-gradient(rgb(234, 239, 240), rgb(48, 62, 143));
+    background: rgb(110, 114, 140);
+    height: 100vh;
 }
 
 .heading {
