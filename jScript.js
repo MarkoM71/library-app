@@ -94,6 +94,12 @@ newBookButton.addEventListener("click", function () {
     // newBookForm.style.display = "block";
 })
 
+//CLOSE FORM BUTTON
+let popUpButton = document.querySelector(".close");
+popUpButton.addEventListener("click", function () {
+    popUpForm.style.display = "none";
+})
+
 //SUBMIT FORM BUTTON
 document.querySelector(".new-book-form").addEventListener("submit", function (event) {
     event.preventDefault();
