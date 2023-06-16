@@ -86,9 +86,12 @@ function removeBook(index) {
 
 //DISPLAY FORM BUTTON
 let newBookButton = document.querySelector(".new-book-button");
+const popUpForm = document.getElementById('pop-up');
 newBookButton.addEventListener("click", function () {
-    let newBookForm = document.querySelector(".new-book-form");
-    newBookForm.style.display = "block";
+    popUpForm.style.display = "block";
+    //Previous had it done this way
+    // let newBookForm = document.querySelector(".new-book-form");
+    // newBookForm.style.display = "block";
 })
 
 //SUBMIT FORM BUTTON
@@ -97,6 +100,8 @@ document.querySelector(".new-book-form").addEventListener("submit", function (ev
     addBookToLibrary();
     let bookForm = document.querySelector(".new-book-form");
     bookForm.reset();
+    popUpForm.style.display = "none";
+    // bookForm.style.display = "none";
 })
 
 //STORE LIBRARY IN LOCAL STORAGE
