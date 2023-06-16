@@ -100,6 +100,13 @@ popUpButton.addEventListener("click", function () {
     popUpForm.style.display = "none";
 })
 
+//CLOSE FORM WITH CLICK OUTSIDE OF MODAL
+window.onclick = function(event) {
+  if (event.target == popUpForm) {
+    popUpForm.style.display = "none";
+  }
+}
+
 //SUBMIT FORM BUTTON
 document.querySelector(".new-book-form").addEventListener("submit", function (event) {
     event.preventDefault();
