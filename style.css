@@ -3,8 +3,6 @@ body {
     background: linear-gradient(rgb(234, 239, 240), rgb(48, 62, 143));
 }
 
-/* rgb(47, 150, 163) */
-
 .heading {
     display: flex;
     justify-content: center;
@@ -13,7 +11,6 @@ body {
     margin: 40px;
     font-family: 'Sansita Swashed', cursive;
     transform: scale(1.1);
-
 }
 
 .new-book-btn-container {
@@ -34,7 +31,7 @@ body {
     background-color: rgb(94, 101, 138);
 }
 
-/* ADD POP UP DISPLAY */
+/* MODAL DISPLAY */
 #pop-up {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -69,6 +66,7 @@ legend {
     cursor: pointer;
 }
 
+/* FORM */
 form {
     width: 300px;
     height: 380px;
@@ -80,8 +78,6 @@ form {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     font-size: 20px;
     background-color: white;
-
-    /* #ddd; */
 }
 
 label {
@@ -114,6 +110,7 @@ label {
     display: block;
 }
 
+/* LIBRARY */
 .library {
     text-align: center;
 }
