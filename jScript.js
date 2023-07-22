@@ -1,11 +1,25 @@
 let myLibrary = [];
 
-//CONSTRUCTOR 
-function Book(title, author, pages, read) {
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.read = read;
+//CONSTRUCTOR-WAS USED PREVIOUSLY
+// function Book(title, author, pages, read) {
+//     this.title = title;
+//     this.author = author;
+//     this.pages = pages;
+//     this.read = read;
+// }
+
+//INPUT CLASS AS PART OF THE CLASS SECTION ASSIGNMENT
+class Book{
+    constructor(title, author, pages, read) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.read = read;
+    }
+
+    toggleRead() {
+        this.read = !this.read;
+    }
 }
 
 //ADDS TO LIBRARY
@@ -48,10 +62,11 @@ function displayBooks() {
     }
 }
 
+//PROTOTYPE FUNCTION USED PREVIOUSLY, TOGGLE READ ADDED TO CLASS
 //TOGGLE READ FUNCTION
-Book.prototype.toggleRead = function() {
-  this.read = !this.read;
-}
+// Book.prototype.toggleRead = function() {
+//   this.read = !this.read;
+// }
 
 function toggle(index) {
     myLibrary[index].toggleRead();
